@@ -56,7 +56,7 @@ begin
       if (i mod 25) = 0 then
       begin
         Write('Press Enter to continue...');
-        ReadLn; // ќжидание нажати€ Enter
+        ReadLn; 
       end;
     end;
     Writeln('Passwords saved to file: ', outputFile);
@@ -115,6 +115,6 @@ begin
   end;
 
   Write('Press Enter to exit...');
-  ReadLn; // ќжидание нажати€ Enter перед выходом
+  ReadLn; 
 end.
 
