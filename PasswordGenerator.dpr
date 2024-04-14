@@ -53,11 +53,6 @@ begin
     begin
       password := GeneratePassword(length, useLowercase, useUppercase, useNumbers, useSymbols);
       WriteLn(fileStream, 'Password ', i, ': ', password);
-      if (i mod 25) = 0 then
-      begin
-        Write('Press Enter to continue...');
-        ReadLn; 
-      end;
     end;
     Writeln('Passwords saved to file: ', outputFile);
   finally
@@ -72,6 +67,11 @@ var
   userInput: string;
 begin
   try
+    Writeln('ZugZang Free Password Generator 2025');
+    Writeln('************************************');
+    Writeln('https://t.me/ZugZangCraft  |  https://shoppy.gg/@ZugZang');
+    Writeln('');
+
     Writeln('Enter password length:');
     ReadLn(length);
 
@@ -113,8 +113,4 @@ begin
       Halt(1); // Exit
     end;
   end;
-
-  Write('Press Enter to exit...');
-  ReadLn; 
 end.
-
